@@ -24,7 +24,7 @@ namespace Laricão
             pfc.AddFontFile("E:\\Laricao\\img\\Gluten.ttf");
             Font padrao = new Font(pfc.Families[0], 16, FontStyle.Regular);
             label6.Font = padrao;
-            TituloCad.Font = padrao;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
