@@ -10,6 +10,9 @@ namespace Modelo
     {
         public int id;
         public string nome;
+        public string sobrenome;
+        public string cpf;
+        public string tel;
         public string senha;
         public string email;
         public int idperfil;
@@ -17,6 +20,9 @@ namespace Modelo
         public UsuarioModelo()
         {
             nome = null;
+            sobrenome = null;
+            cpf = null;
+            tel = null;
             senha = null;
             email = null;
             idperfil = 2;
