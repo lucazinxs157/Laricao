@@ -275,6 +275,7 @@
             this.btnSair.Size = new System.Drawing.Size(30, 18);
             this.btnSair.TabIndex = 19;
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // Cadastro
             // 
