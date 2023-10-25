@@ -348,6 +348,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="burger.ico" />
+    <None Include="Resources\agenda1.png" />
+    <None Include="Resources\agenda.png" />
+    <None Include="Resources\menu.jpg" />
+    <None Include="Resources\LARICÃO.png" />
     <None Include="Resources\banner3.png" />
     <None Include="Resources\hamburguerCadastro.jpg" />
     <None Include="Resources\trash-bin.png" />

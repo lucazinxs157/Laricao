@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cXoiAOxh+4bvB05ixVhhoAmECyOliHnJ5yOO/VNw9Bo=</dsig:DigestValue>
+        <dsig:DigestValue>RFBOT/3/EyThkOkAsl0JsNXs2xGKdK2sTXyU+plHoTg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Laricão.exe" size="2194904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Laricão.exe" size="2336728">
       <assemblyIdentity name="Laricão" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qYjoz9pyF0Uwmp/lgYgxp9V9JAZd1A26eeNVy85SEE4=</dsig:DigestValue>
+        <dsig:DigestValue>OAGKma6FGDJ22pSr/4RbUGwKvfm9hDYZorRYP3jwQJM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,7 +158,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QUi2MTQG4ATsEvnN0OcCBYfEfOfginTPPtEcgIZbNdc=</dsig:DigestValue>
+        <dsig:DigestValue>Dw0FDqYiic2z4ePBlcNI+g1z7FQ0Uie+F319mo+w0xo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

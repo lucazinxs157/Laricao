@@ -8,6 +8,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.Net.Mail;
+using System.Net.Mime;
+using System.Net;
 using System.Windows.Forms;
 
 namespace Laricão
@@ -197,6 +200,41 @@ namespace Laricão
         }
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
+            {
+                // ... Código para gerar a nota fiscal em PDF ...
+
+                // Configuração do email
+                var fromAddress = new MailAddress("lucaswiacek6@gmail.com", "Lucas");
+                var toAddress = new MailAddress("sampaioeeduardo36@gmail.com", "dudous");
+                string subject = "Nota Fiscal do Pedido";
+                string body = "Obrigado por fazer o pedido! Aqui está a sua nota fiscal em anexo.";
+
+                var smtpClient = new SmtpClient
+                {
+                    Host = "smtp.office365.com", // Substitua pelo servidor SMTP apropriado
+                    Port = 587, // Porta do servidor SMTP
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential("lucaswiacek6@gmail.com", "descobre.06") // Substitua com suas credenciais
+                };
+
+                // Anexar o PDF da nota fiscal
+                Attachment attachment = new Attachment("E:\\Laricao\\nota_fiscal.pdf", MediaTypeNames.Application.Pdf);
+                var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = subject,
+                    Body = body
+                };
+           
+
+                // Enviar o email
+                smtpClient.Send(message);
+
+                // Limpar os recursos
+                message.Dispose();
+             
+            }
             if (dt.Rows.Count != 0)
             {
                 if (TextBoxVazias())

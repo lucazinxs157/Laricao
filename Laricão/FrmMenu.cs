@@ -40,7 +40,7 @@ namespace Laricão
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                pfc.AddFontFile("F:\\Laricao\\img\\Gluten.ttf");
+                pfc.AddFontFile("E:\\Laricao\\img\\Gluten.ttf");
                 Font padrao = new Font(pfc.Families[0], 16, FontStyle.Regular);
                 label1.Font = padrao;
                 btn_cardapio.Font = padrao;
