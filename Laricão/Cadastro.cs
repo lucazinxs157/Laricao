@@ -140,5 +140,10 @@ namespace Laricão
         {
             Application.Exit();
         }
+
+        private void txtemail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

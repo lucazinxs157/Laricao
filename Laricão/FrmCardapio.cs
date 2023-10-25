@@ -51,7 +51,7 @@ namespace Laricão
         }
         private void ListarProduto(string ctg)
         {
-            pfc.AddFontFile("F:\\Laricao\\img\\Gluten.ttf");
+            pfc.AddFontFile("E:\\Laricao\\img\\Gluten.ttf");
 
             Font padrao = new Font(pfc.Families[0], 16, FontStyle.Regular);
 
@@ -90,6 +90,8 @@ namespace Laricão
                 preco.Text = "R$" + dt.Rows[registros][2].ToString();
                 preco.Location = new Point(20, 270);
                 preco.Font = new Font("Arial", 9, FontStyle.Regular);
+
+          
 
                 Label descproduto = new Label();
                 descproduto.Name = "nome";

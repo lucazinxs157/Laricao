@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Modelo;
 using MySql.Data.MySqlClient;
@@ -101,6 +103,7 @@ namespace Controle
             else
                 return false;
         }
+
         static bool TodosDigitosIguais(string cpf)
         {
             bool result = false;
@@ -286,8 +289,27 @@ namespace Controle
             {
                 throw new ApplicationException(ex.ToString());
             }
+            //PdfDocument document = new PdfDocument();
+      
 
+            //// ... Código para desenhar a nota fiscal no documento PDF ...
+
+            //string nomeArquivo = "nota_fiscal.pdf";
+        
+            //string pastaDoProjeto = AppDomain.CurrentDomain.BaseDirectory; // Obtém a pasta do projeto
+
+            //// Combine o caminho completo do arquivo
+     
+
+            //// Salve o PDF na pasta do projeto
+            
+            //string caminhoCompleto = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), nomeArquivo);
+            //document.Save("E:\\Laricao");
+
+
+            //Console.WriteLine($"Nota fiscal salva em: {"E:\\Laricao"}");
+        }
 
         }
     }
-}
+
